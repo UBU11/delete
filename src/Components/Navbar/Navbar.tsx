@@ -14,7 +14,7 @@ const Navbar = () => {
   }
 
   const path = useReactPath();
-  const navContent = ["home", "about", "gallery", "team","leaderboard", "contact"];
+  const navContent = ["home", "about", "gallery", "team", "leaderboard", "contact"];
 
   useEffect(() => { }, [path]);
 
@@ -76,13 +76,13 @@ const Navbar = () => {
           <div>
             {navContent.map((content, i) => (
               <a
-                href={content === "leaderboard" ? "https://chatgpt.com/" : `#${content}`}
+                href={content === "leaderboard" ? "https://chatgpt.com/" : `#${content}`} // Only the check here
                 key={i.toString() + content}
               >
                 <p
                   style={{
                     borderBottom: window.location.href.includes(
-                      content === "leaderboard" ? "https://chatgpt.com/" : `#${content}`
+                      content === "leaderboard" ? "https://chatgpt.com/" : `#${content}` // Only the check here
                     )
                       ? "4px solid #B3B3FF"
                       : "",
