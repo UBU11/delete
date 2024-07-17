@@ -76,13 +76,13 @@ const Navbar = () => {
           <div>
             {navContent.map((content, i) => (
               <a
-                href={content === "leaderboard" ? "https://chatgpt.com/" : `#${content}`} // Only the check here
+                href={content === "leaderboard" ? "https://developer.mozilla.org/en-US/docs/Web/HTML" : `#${content}`} // Only the check here
                 key={i.toString() + content}
               >
                 <p
                   style={{
                     borderBottom: window.location.href.includes(
-                      content === "leaderboard" ? "https://chatgpt.com/" : `#${content}` // Only the check here
+                      content === "leaderboard" ? "https://developer.mozilla.org/en-US/docs/Web/HTML" : `#${content}` // Only the check here
                     )
                       ? "4px solid #B3B3FF"
                       : "",
